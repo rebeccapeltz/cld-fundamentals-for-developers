@@ -1,7 +1,7 @@
 require('dotenv').config();
 const cloudinary = require('cloudinary').v2;
 
-cloudinary.uploader.upload('assets/images/kitten.jpg', {
+cloudinary.uploader.upload('./assets/images/kitten.jpg', {
         categorization: 'aws_rek_tagging',
         auto_tagging: 0.7
     })

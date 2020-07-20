@@ -1,7 +1,7 @@
 require('dotenv').config();
 const cloudinary = require('cloudinary').v2;
 
-cloudinary.uploader.upload('assets/images/kitten.jpg', {
+cloudinary.uploader.upload('./assets/images/shoes.jpg', {
         background_removal: 'cloudinary_ai'
     })
     .then(uploadResult => console.log(JSON.stringify(uploadResult, null, 2)))

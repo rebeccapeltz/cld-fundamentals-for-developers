@@ -1,14 +1,14 @@
 require('dotenv').config();
 const cloudinary = require('cloudinary').v2;
 
-cloudinary.uploader.upload('https://i0.wp.com/metro.co.uk/wp-content/uploads/2019/04/SEI_59793697-e1555334390108.jpg', {
+cloudinary.uploader.upload('./assets/images/arya-stark.jpg', {
         detection: 'adv_face',
         public_id: 'arya-stark'
     })
     .then(uploadResult => console.log(JSON.stringify(uploadResult, null, 2)))
     .catch(error => console.error(error))
 
-cloudinary.uploader.upload('http://pluspng.com/img-png/aviator-20sunglasses-20vector-2048.png', {
+cloudinary.uploader.upload('./assets/images/sunglasses.png', {
         public_id: 'sunglass'
     })
     .then(uploadResult => console.log(JSON.stringify(uploadResult, null, 2)))

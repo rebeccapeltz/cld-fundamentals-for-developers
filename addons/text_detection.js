@@ -1,7 +1,7 @@
 require('dotenv').config();
 const cloudinary = require('cloudinary').v2;
 
-cloudinary.uploader.upload('https://res.cloudinary.com/demo/image/upload/black_car.jpg', {
+cloudinary.uploader.upload('./assets/images/black_car.jpg', {
     public_id: 'black_car',
     ocr: 'adv_ocr'
   })

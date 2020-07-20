@@ -1,7 +1,7 @@
 require('dotenv').config();
 const cloudinary = require('cloudinary').v2;
 
-cloudinary.uploader.upload('https://i0.wp.com/metalinjection.net/wp-content/uploads/2019/03/metallica.jpg', {
+cloudinary.uploader.upload('./assets/images/metallica.jpg', {
         detection: 'aws_rek_face',
         auto_tagging: 0.7
     })
