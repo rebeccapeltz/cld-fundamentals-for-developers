@@ -57,7 +57,7 @@
   "version": "2.8.0",
   "dependencies": {
     "all": "0.0.0",
-    "cloudinary": "^1.19.0",
+    "cloudinary": "^2.7.0",
     "connect": "^3.7.0",
     "dotenv": "^8.2.0",
     "lodash": "^4.17.15",
